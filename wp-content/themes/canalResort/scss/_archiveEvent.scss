@@ -1,0 +1,28 @@
+.archiveEvent {
+    &__heading {
+        text-align: center;
+        margin-top: 90px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 270px;
+        margin-top: 50px;
+    }
+    &__item {
+        width: 23%;
+        margin-right: 2.3%;
+        margin-bottom: 30px;
+
+        @include m.mq(tab) {
+            width: 100%;
+        }
+
+
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+    }
+}

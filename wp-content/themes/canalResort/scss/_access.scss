@@ -1,0 +1,45 @@
+@use "mixin" as m;
+
+.access {
+
+    // タイムテーブル共通部分
+    &__timetable {
+        &.borderedBtn {
+
+        
+        background: #615b54;
+        color: white;
+        height: auto;
+        font-size: 16px;
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        
+        @include m.mq(pc) {
+            height: 50px;
+            width: 360px;
+        }
+
+        &:hover {
+            border: 1px solid #615b54;
+            background-color: white;
+            color: #615b54;
+            text-decoration: none;
+        }
+    }
+    }
+
+    //地下鉄・バス
+    &__subway {
+        padding: 60px;
+
+        &__img {
+            margin-top: 100px;
+        }
+        
+        .timetableButton {
+            margin: 40px auto 0;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.company {
+    &__heading {
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    &__descList {
+        margin-top: 90px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        @include m.mq(sp) {
+            font-size: 14px;
+        }
+
+        dt {
+            width: 23%;
+            padding: 30pt 12px;
+            border-top: 1px solid $darkBlue;
+            box-sizing: border-box;
+            &:last-of-type {
+                border-bottom: 1px solid $darkBlue;
+            }
+        }
+
+        dd {
+            width: 77%;
+            padding: 30pt 12px;
+            border-top: 1px solid $tableHead;
+            margin: 0;
+            box-sizing: border-box;
+            &:last-of-type {
+                border-bottom: 1px solid $tableHead;
+            }
+        }
+    }
+}

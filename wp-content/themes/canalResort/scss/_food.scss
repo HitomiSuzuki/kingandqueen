@@ -1,0 +1,230 @@
+@use "mixin" as m;
+
+.food {
+    padding-bottom: 44px;
+
+    &__mv {
+        height: 760px;
+        position: relative;
+
+        @include m.mq(sp) {
+            max-height: 400px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__floor {
+        &__imageWithText {
+            .imageWithText__desc {
+                margin-top: 22px;
+                line-height: 180%;
+
+                &.noTitle {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &__image {
+        height: 315px;
+        display: block;
+    }
+
+    &__shopList {
+        padding: 87px 0 98px;
+
+        &.kingQueenDining {
+            background: linear-gradient(pink, skyblue);
+            
+        }
+
+        &.chefsCollabo {
+            background-color: coral;
+
+            @include m.mq(sp) {
+                padding-top: 0;
+            }
+        }
+
+        &.juicyCafe {
+            background-color: orange;
+        }
+
+        &.blueskyCafe {
+            background-color: lightblue;
+
+            // TODO: 画像入れたら消す
+            img {
+                background-color: yellow;
+            }
+        }
+
+        .food__shopList__title, th, td {
+            color: white;
+        }
+
+        &__areaLogo {
+            width: 800px;
+            height: 100px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+
+            @include m.mq(sp) {
+                width: 100%;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 15px;
+                font-weight: 600;
+            }
+        }
+
+        &__banner {
+            display: block;
+            text-align: center;
+            width: 500px;
+            margin: 130px auto 0;
+            padding: 30px 0;
+            font-size: 32px;
+            background-color: $accent;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+
+            @include m.mq(sp) {
+                width: 80%;
+                padding: 20px 0;
+                font-size: 20px;
+            }
+        
+        }
+
+
+        &__title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+
+            span {
+                font-size: 28px;
+                display: block;
+                font-weight: 200;
+            }
+        }
+
+        &__img {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            display: block;
+            max-height: 800px;
+            height: 90vh;
+
+            @include m.mq(sp) {
+                max-height: 400px;
+            }
+        }
+
+
+        &__shops {
+            margin: 0 auto;
+
+            &__inner {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+
+            &__item {
+                width: 23%;
+                max-width: 260px;
+                padding: 0 1%;
+                margin-top : 76px;
+
+                @include m.mq(tab) {
+                    margin-top: 36px;
+                }
+                div {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                    &.menu-corner {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 30%;
+                        height: auto;
+                        object-fit: contain;
+                        background: transparent;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                    text-align:center;
+                    padding-top: 10px;
+                    @include m.mq(tab) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &__collaboration {
+                margin: 76px auto 0;
+                width: 98%;
+                max-width: 1105px;
+                height: 680px;
+                margin-bottom: 300px;
+                @include m.mq(tab) {
+                    height: auto;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: white;
+                    text-align: center;
+                    padding-top: 10px;
+                    font-weight: bold;
+                    @include m.mq(tab) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &__commingSoon {
+            font-size: 40px;
+            color: blue;
+            text-align: center;
+            margin-top: 30px;
+
+            @include m.mq(sp) {
+                font-size: 22px;
+            }
+
+            &--chefsCollabo {
+                color: white;
+            }
+        }
+    }
+}

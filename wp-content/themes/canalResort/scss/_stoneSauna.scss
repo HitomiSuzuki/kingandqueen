@@ -1,0 +1,168 @@
+@use 'mixin' as m;
+
+.stoneSauna {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__logo {
+        max-width: 300px;
+        margin: 90px auto 0;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    &__subHeading {
+        text-align: center;
+        margin-top: 24px;
+        padding: 0 15px;
+
+        &--2 {
+            margin-top: 80px;
+            margin-bottom: 10px;
+            img {
+                object-fit: contain;
+                width: auto;
+                display: inline-block;
+                height: 70px;
+            }
+        }
+    }
+
+    &__desc {
+        margin-top: 16px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    &__catchImg {
+        margin-top: 60px;
+    }
+
+    &__floorMap {
+        width: calc(100% - 100px);
+        max-height: 638px;
+        margin: 34px auto 270px;
+
+        @include m.mq(sp) {
+            margin-bottom: 130px;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__floor__imageWithText {
+        &.stoneSauna__floor__imageWithText__desc {
+            font-size: 24px;
+        }
+
+        &__subtitle {
+            font-size: 8px;
+            position: absolute;
+            top: -13px;
+            left: 14px;
+            z-index: 1;
+            color: white;
+        }
+
+        &__title {
+            display: inline-block;
+            font-size: 32px;
+            position: relative;
+            img {
+                width: 52px;
+                height: 52px;
+                object-fit: contain;
+            }
+        }
+
+        &__mainTitle {
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+    }
+
+    &__note {
+        margin-top: 123px;
+        &__title {
+            text-align: center;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 37.5%;
+                height: 1px;
+                background-color: $darkBlue;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+
+                @include m.mq(tab) {
+                    width: 27.5%;
+                }
+                @include m.mq(sp) {
+                    width: 12.5%;
+                }
+
+            }
+
+            &::after {
+                content: '';
+                width: 37.5%;
+                height: 1px;
+                background-color: $darkBlue;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+
+                @include m.mq(tab) {
+                    width: 27.5%;
+                }
+                @include m.mq(sp) {
+                    width: 12.5%;
+                }
+            }
+        }
+
+        &__desc {
+            text-align: center;
+            margin-top: 35px;
+            padding: 15px;
+        }
+    }
+
+    &__caution {
+        margin-top: 43px;
+        margin-bottom: 163px;
+        background-color: $cautionBg;
+        padding: 40px 50px;
+
+        @include m.mq(tab) {
+            padding: 40px 15px;
+        }
+        
+        &__title {
+            color: $red;  
+            text-align: center; 
+        }
+        &__desc {
+            text-align: center;
+        }
+    }
+
+
+}

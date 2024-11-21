@@ -1,0 +1,83 @@
+.recruit {
+    &__heading {
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    &__subHeading {
+        margin-top: 24px;
+        text-align: center;
+    }
+    
+    &__desc {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    &__content {
+        margin-top: 80px;
+        margin-bottom: 180px;
+
+        &__item {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            &__title {
+                width: 20%;
+                border-bottom: 2px solid $tableBorder;
+            }
+
+            &__list {
+                width: 75%;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    padding-bottom: 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__table {
+            width: 100%;
+            border-top: 1px solid $tableBorder;
+            border-left: 1px solid $tableBorder;
+            margin-top: 60px;
+            border-collapse: collapse;
+            td {
+                width: 70%;
+                border-right: 1px solid $tableBorder;
+                border-bottom: 1px solid $tableBorder;
+                padding: 10px;
+                
+                &.title {
+                    width: 30%;
+                    padding: 10px;
+                    background-color: $lightGray;
+                    color: $lightblue;
+                }
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p.detail {
+                        font-size: 12px;
+                        color: $lightblue;
+                    }
+                }
+            }       
+        }
+    }
+
+    &__note {
+        max-width: 1000px;
+        margin: 30px auto 0;
+
+        @include m.mq(sp) {
+            padding: 0 20px;
+        }
+    }
+}

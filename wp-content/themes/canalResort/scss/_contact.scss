@@ -1,0 +1,243 @@
+.contact {
+    &__heading {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    &__subHeading {
+        text-align: center;
+        margin-top: 17px;
+    }
+
+    &__phone {
+        padding: 45px 0 10px;
+        border: 1px solid $shopListBorder;
+        width: 100%;
+        max-width: 800px;
+        margin: 17px auto 0;
+        &__number {
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            color: $foodText;
+            text-align: center;
+            display: block;
+        }
+        &__hour {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 103px;
+        width: 100vw;
+        margin-right: calc(50% - 50vw);
+        margin-left: calc(50% - 50vw);
+        border-top: 1px solid $tableBorder;
+        padding-top: 42px;
+        margin-bottom: 360px;
+        text-align: center;
+
+        &__progress {
+            background-color: $contactStepBg;
+            width: 100%;
+            max-width: 920px;
+            margin: 17px auto 0;
+            display: flex;
+            justify-content: center;
+            padding: 50px 0 60px;
+
+            &__step {
+                font-size: 22px;
+                color: $contactStep;
+                padding: 0 38px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    background-color: $tableBorder;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translate(-60%, 0);
+                    border-radius: 7px;
+                }
+                &.done {
+                    &::before {
+                        background-color: $contactStep;
+                    }
+                }
+
+                &--progressLine {
+                    &::after {
+                        content: "";
+                        width: 113px;
+                        height: 2px;
+                        background-color: $tableBorder;
+                        position: absolute;
+                        bottom: -15px;
+                        left: -57px;
+                    }
+
+                    &.done {
+                        &::after {
+                            background-color: $contactStep;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__note {
+            width: 100%;
+            max-width: 960px;
+            margin: 48px auto 0;
+            text-align: left;
+
+            li {
+                margin-top: 8px;
+            }
+        }
+
+        &__list {
+            width: 960px;
+            margin: 80px auto 0;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            text-align: left;
+
+            dt {
+                width: 27%;
+                padding-bottom: 38px;
+                border-bottom: 1px solid $darkBlue;
+                height: 100px;
+                box-sizing: border-box;
+                padding-top: 30px;
+                p {
+                    font-size: 14px;
+                    font-weight: bold;
+    
+                }
+
+                span {
+                    background-color: $alert;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    line-height: 140%;
+                    padding: 4.1px 0;
+                    width: 43px;
+                    text-align: center;
+                    color: white;
+                    display: inline-block;
+                    margin-right: 7px;
+                }
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+
+            dd {
+                width: 73%;
+                padding: 25px 40px;
+                border-bottom: 1px solid $tableHead;
+                height: 100px;
+                box-sizing: border-box;
+                margin: 0;
+                input {
+                    height: 25px;
+                    border: 1px solid $inputBg;
+                    background-color: $lightGray;
+                    width: 100%;
+                }
+
+                textarea {
+                    border: 1px solid $inputBg;
+                    background-color: $lightGray;
+                    width: 100%;
+                }
+
+                &:last-of-type {
+                    border-bottom: none;
+                    height: auto;
+                }
+            }
+
+            +p {
+                text-align: center;
+                #contact_submit {
+                    width: 420px;
+                    padding: 18px 0;
+                    text-align: center;
+                    border: 1px solid $orange;
+                    color: $orange;
+                    font-size: 24px;
+                    margin: 67px auto 30px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .wpcf7-response-output {
+            width: 960px;
+            margin: 0 auto !important;
+        }
+
+        &__thanks {
+            width: 920px;
+            margin: 30px auto;
+            font-size: 40px;
+            color: $accent;
+            text-align: center;
+        }
+
+        &__button {
+            &__confirm {
+                width: 420px;
+                padding: 18px 0;
+                text-align: center;
+                border: 1px solid $orange;
+                color: $orange;
+                font-size: 24px;
+                margin: 67px auto 30px;
+                background-color: white;
+            }
+
+            &__prev {
+                width: 420px;
+                padding: 18px 0;
+                text-align: center;
+                border: 1px solid $darkBlue;
+                color: $darkBlue;
+                font-size: 24px;
+                margin: 67px auto 30px;
+                background-color: white;
+                +br {
+                    display: none;
+                }
+            }
+
+            &__submit {
+                width: 420px;
+                padding: 18px 0;
+                text-align: center;
+                border: 1px solid $orange;
+                color: $orange;
+                font-size: 24px;
+                margin: 67px auto 30px;
+                background-color: white;
+                +span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
