@@ -1,0 +1,96 @@
+@use "mixin" as m;
+
+
+.sidenav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+
+    @include m.mq(pc) {
+        display: block;
+        width: 60px;
+        top: 50%;
+        right: 0;
+        left: auto;
+        transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+    }
+
+    &__item {
+        display: block;
+        font-size: 16px;
+        line-height: 140%;
+        color: white;
+        padding-left: 10px;
+        padding-bottom: 20px;
+
+        @include m.mq(pc) {
+            display: block;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            letter-spacing: 5px;
+            padding: 0;
+        }
+        &:hover {
+            color: white;
+            text-decoration: none;
+            opacity: 0.95;
+        }
+        &:active {
+            color: white;
+            text-decoration: none;
+        }
+
+        &--contact {
+            
+            background-color: #615B54;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: calc(100% - 100px);
+            @include m.mq(pc) {
+                margin-bottom: 40px;
+                display: block;
+                padding: 61px 22px;
+                height: auto;
+                width: auto;
+            
+            }
+        }
+
+        &--line {
+            height: 50px;
+            width: 50px;
+            @include m.mq(pc)  {
+                margin-bottom: 10px;
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        &--instagram {
+            width: 50px;
+            height: 50px;
+            @include m.mq(pc)  {
+                margin-bottom: 10px;
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        &--tiktok {
+            width: 50px;
+            height: 50px;
+            @include m.mq(pc)  {
+                margin-bottom: 10px;
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}

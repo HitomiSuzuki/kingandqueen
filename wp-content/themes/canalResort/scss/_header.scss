@@ -1,0 +1,178 @@
+@use 'mixin' as m;
+@import 'color';
+
+.header {
+    transition: all 1s; 
+    width: 100vw;
+    background: white;
+    z-index:999;
+    top: -100vh;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    font-weight: 400;
+
+    @include m.mq(largePc) {
+        position: static;
+        margin: 0 auto;
+        padding: 0 36px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        box-sizing: border-box;
+        overflow: initial;
+    }
+
+    // タブレット以下の時開いた時のスタイル
+    &.open {
+        top: 0;
+        opacity: 1;
+        position: fixed;
+        
+        // ハンバーガーボタンのアニメーション
+        .humburger>.humburger__item {
+            &--1 {
+                background: $accent;
+                transform: rotate(135deg);
+                top: 21px;
+            }
+            &--2 {
+                background: $accent;
+                opacity: 0;
+            }
+            &--3 {
+                background: $accent;
+                transform: rotate(45deg);
+                top: 21px;
+            }
+        }
+    }
+
+    &__logo {
+        width: 138px;
+        height: 90px;
+        display: block;
+        img {
+            object-fit: contain;
+        }
+
+        @include m.mq(sp) {
+            margin: 20px auto;
+        }
+    }
+
+    &__items {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        @include m.mq(largePc) {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+
+        li {
+            position: relative;
+            margin-right: 17px;
+            &:last-of-type {
+                margin-left: 5px;
+                border: 1px solid #DB4319;
+                border-radius: 50px;
+                width: 120px;
+                padding: 15px 0;
+                margin-right: 0;
+
+                @include m.mq(sp) {
+                    margin: 10px auto;
+                }
+            }
+
+            @include m.mq(sp) {
+                margin-right: 0;
+                margin: 10px auto;
+            }
+        }
+
+        &__item {
+            display: block;
+            color: #465658;
+            text-align: center;
+            font-size: 12px;
+            line-height: 200%;
+            br {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+// ハンバーガーボタン
+.humburger {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 42px;
+    height: 42px;
+    z-index: 1000;
+    border-radius: 40px;
+    background-color: white;
+    @include m.mq(largePc)  {
+        display: none;
+    }
+
+    &__item {
+        width: 22px;
+        height: 2px;
+        background: $accent;
+        transition: all 0.5s;
+        position: absolute;
+        left: 10px;
+
+        &--1 {
+            transform: rotate(0);
+            top: 13px;
+        }
+        &--2 {
+            top: 20px;
+            opacity: 1;
+        }
+        &--3 {
+            transform: rotate(0);
+            top: 27px;
+        } 
+    }
+}
+
+// 翻訳メニュー 
+.gt_float_switcher.open {
+    transform: translateY(120px);
+}
+
+.gt_float_switcher {
+    transition: all 0s !important;
+}
+
+.gt_float_switcher img{
+    width: 15px !important;
+}
+
+.gt-lang-code {
+    font-size: 13px;
+}
+
+.gt_float_switcher .gt-selected .gt-current-lang span.gt-lang-code {
+    top: 0 !important;
+}
+
+.nturl {
+    font-size: 13px;
+}

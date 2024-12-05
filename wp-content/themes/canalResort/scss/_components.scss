@@ -1,0 +1,489 @@
+@use 'mixin'as m;
+
+/*
+フレックス
+*/
+.flex {
+    display: flex;
+    align-items: center;
+
+    &--spaceBetween {
+        justify-content: space-between;
+    }
+
+    &--end {
+        justify-content: end;
+    }
+}
+
+
+/*
+下層メインビジュアル
+*/
+.mv {
+    width: 100vw;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    height: 400px;
+    position: relative;
+    background-color: $accent;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .mvBg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        color: white;
+
+        span {
+            display: block;
+            padding-top: 1px;
+            font-size: 24px;
+            text-align: center;
+            @include m.mq(sp) {
+                font-size: 17px;
+            }
+        }
+    }
+
+
+}
+
+
+/*
+テキストと画像のセットのやつ
+*/
+.imageWithText {
+    width: 100vw;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    background-color: $bgBaige;
+    height: 600px;
+
+    @include m.mq(tab) {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include m.mq(sp) {
+       display: block;
+       height: auto;
+    }
+
+    &.white {
+        background-color: white;
+        color: $foodText;
+
+        .imageWithText__title {
+            color: $foodText;
+        }
+    }
+
+    &.black {
+        background-color: black;
+        color: white;
+        .imageWithText__title {
+            color: white;
+        }
+    }
+
+    &__imageWrapper {
+        width: 60%;
+        height: 100%;
+        position: relative;
+
+        &--left {
+            order: 1;
+        }
+
+        &.full {
+            @include m.mq(sp) {
+                height: 800px;
+            }
+        }
+
+        .absolute {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 40%;
+            height: auto;
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .absolute--2 {
+            position: absolute;
+            right: 44%;
+            bottom: 10px;
+            width: 20%;
+            height: auto;
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @include m.mq(tab) {
+            display: block;
+        }
+        @include m.mq(sp) {
+            height: 300px;
+            width: 100%;
+        }
+        picture {
+            width: 100%;
+            height: 100%;
+            img {
+                display: block;
+            }
+           }
+
+
+        >img {
+           width: 66.7%;
+           @include m.mq(tab) {
+            width: 100%;
+            height: 33.3%;
+           }
+           
+           &.full {
+            width: 100%;
+            @include m.mq(tab) {
+                height: 100%;
+            }
+           }
+
+           &.left {
+            object-position: left;
+           }
+        }
+        >div {
+            width: 33.3%;
+            height: 100%;
+            @include m.mq(tab) {
+                width: 100%;
+                height: 66.6%;
+            }
+            img {
+                height: 300px;
+                width: 100%;
+                vertical-align: middle;
+                @include m.mq(tab) {
+                    height: 50%;
+                }
+
+                &.full {
+                    height: 100%;
+                }
+
+                &.positionTop {
+                    object-position: top;
+                }
+            }
+        }
+    }
+
+    &__textWrapper {
+        margin: 0 50px; 
+        width: 300px;
+        position: relative;
+
+        &--right {
+            order: 2;
+        }
+        @include m.mq(sp) {
+            width: calc(100% - 20px);
+            margin: 0 10px;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+
+     
+    }
+
+    &__desc {
+        margin-top: 60px;
+    }
+}
+
+/*
+イベント情報のパネル
+*/
+.eventItem {
+    &__img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: start;
+        align-items: stretch;
+        background-color: #f5f5f5;
+
+        &__date {
+            width: 30%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            background-color: $darkBlue;
+            color: white;
+            font-size: 48px;
+            padding: 10px;
+            line-height: 1;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include m.mq(sp) {
+                width: 45%;
+            }
+
+            &.large {
+                font-size: 36px;
+                padding: 0.3em;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            span span {
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        &__title {
+            width: 70%;
+            height: auto;
+            background-color: $lightGray;
+            color: $base;
+            margin: 1em;
+            font-size: 18px;
+            box-sizing: border-box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+
+            @include m.mq(sp) {
+                width: 55%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .large {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// map
+.map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m.mq(tab) {
+        display: block;
+    }
+
+    &__inner {
+        position: relative;
+        height: auto;
+    }
+    &__each {
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        &--default {
+            display: block;
+            position: static;
+
+            &.hide {
+                display: none;
+            }
+        }
+    }
+
+    &__navs {
+        @include m.mq(tab) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+    }
+
+    &__nav {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 0 5px 30px;
+        position: relative;
+        box-sizing: border-box;
+
+        @include m.mq(tab) {
+            margin-right: 30px;
+        }
+        
+        @include m.mq(sp) {
+            margin-right: 0;
+        }
+
+        &:nth-of-type(n) {
+            @include m.mq(sp) {
+                width: 40%;
+            }
+        }
+        &:nth-of-type(2n) {
+            @include m.mq(sp) {
+                width: 60%;
+            }
+        }
+
+        &::before {
+            content:'';
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+
+        &--stoneSauna {
+            &::before {
+                background-color: #EFECC5;
+            }
+
+            &:hover {
+                .map__each--stoneSauna  {
+                    display: block;
+                }
+            }
+        }
+
+        &--bathWomen {
+            &::before {
+                background-color: #FED7FF;
+            }
+        }
+
+        &--bathMen {
+            &::before {
+                background-color: #A9D2FF;
+            }
+        }
+
+        &--esthe {
+            &::before {
+                background-color: #B997E8;
+            }
+        }
+
+        &--restaurant {
+            &::before {
+                background-color: #FFDCD7;
+            }
+        }
+
+        &--lounge {
+            &::before {
+                background-color: #C1F4F3;
+            }
+        }
+        &--sauna {
+            &::before {
+                background-color: #FF9292;
+            }
+        }
+
+        &--noLink {
+            padding-left: 0;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+        }
+
+        &--link {
+            &:hover {
+                text-decoration: underline;
+                opacity:0.8;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin: 0 auto;
+
+    span {
+        padding: 10px;
+        background-color: #F5f5f5;
+        border: #F5f5f5 1px solid;
+        border-radius: 6px;
+        margin: 10px;
+    }
+
+    a {
+        padding: 10px;
+        border: #F5f5f5 1px solid;
+        border-radius: 6px;
+        margin: 10px;
+    }
+}
+
+.spBar {
+    display: none;
+
+    @include m.mq(sp) {
+        display: block;
+    }
+}
+
+svg {
+    a:hover {
+        opacity: 0.6;
+    }
+}

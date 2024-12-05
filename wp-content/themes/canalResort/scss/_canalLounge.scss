@@ -1,0 +1,31 @@
+.canalLounge {
+    &__heading {
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    &__floor {
+        margin-top: 113px;
+
+        &--1f {
+            margin-top: 24px;
+        }
+
+        &--3f {
+            margin-bottom: 200px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+        &__desc {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        &__imageWithText {
+            margin-top: 90px;
+
+        }
+    }
+}

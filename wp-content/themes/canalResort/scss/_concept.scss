@@ -1,0 +1,80 @@
+@use "mixin" as m;
+
+
+.concept {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &__section {
+        margin-top: 90px;
+        &--catch {
+            display: block;
+        }
+
+        @include m.mq(tab)  {
+            display: block;
+        }
+    }
+
+    &__img {
+        margin: 30px auto 0;
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &--right {
+            order: 2;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__catch {
+        margin-top: 24px;
+        text-align: center;
+        @include m.mq(sp) {
+            font-size: 22px;
+        }
+    }
+
+    &__sectionDesc {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__sectionCatchDesc {
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+
+    &__imageWithText {
+        margin-top: 90px;
+    }
+
+    &__sectionHeading {
+        font-size: 28px;
+        text-align: center;
+        @include m.mq(sp) {
+            font-size: 22px;
+        }
+    }
+
+    &__mainImg {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    
+}
