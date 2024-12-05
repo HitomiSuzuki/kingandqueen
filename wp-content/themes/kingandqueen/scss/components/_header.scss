@@ -5,20 +5,26 @@
 .header__top {
     background-color: white;
     height: 90px;
+    position: relative;
 }
 
 .header__logo {
     width: 132px;
     height: 72px;
     margin: 12px auto 6px;
+    display: block;
 }
 
 .header__menues {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
     display: flex;
     justify-content: end;
     padding-right: 4px;
     align-items: center;
+
 }
 
 .header__menuItem {
@@ -39,8 +45,44 @@
 .header__button {
     border: 1px solid #4B4B4B;
     border-radius: 40px;
+    padding: 6px 20px;
+    color: #4B4B4B;
+
+    &:hover {
+        background-color: #4B4B4B;
+        color: white;
+    }
+
+    &.language {
+        padding-left: 50px;
+        background-image: url(../images/header/language.svg);
+        background-position: 24px center;
+        background-repeat: no-repeat;
+        background-size: 19px;
+    }
 }
 
 .header__nav {
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.header__navMenu {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: $bold;
+    padding: 0 20px;
+    height: 70px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+        background-color: white;
+        border-radius: 4px;
+        margin-right: 7px;
+    }
 }
