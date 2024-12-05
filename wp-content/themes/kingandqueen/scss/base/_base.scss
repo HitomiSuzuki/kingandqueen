@@ -1,0 +1,19 @@
+// あとで変更予定
+body {
+    line-height: 1.5em;
+    font-size: 15px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+
+    @include rp('sm') {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    a {
+        &:hover,&:active {
+            text-decoration: none;
+        }
+    }
+}
