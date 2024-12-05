@@ -30,4 +30,17 @@
 //=====================
 .header__access {
     background-image: url(../images/header/pin.svg);
+    background-repeat: no-repeat;
+    padding-left: 21px;
+    background-position: left center;
+    background-size: 14px 18px;
+}
+
+.header__button {
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+}
+
+.header__nav {
+
 }
