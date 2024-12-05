@@ -4,8 +4,15 @@
  */
 @import "base/mixin";
 @import "base/base";
-@import "base/variables";
+@import "base/variable";
 @import "base/reset";
+
+
+// /*
+//  * Components
+//  * -------------------------------------------------------------------
+//  */
+@import "components/header";
 
 
 /*

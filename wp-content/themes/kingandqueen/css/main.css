@@ -165,6 +165,37 @@ label[for] {
   outline: none;
 }
 
+.header {
+  width: 100%;
+}
+
+.header__top {
+  background-color: white;
+  height: 90px;
+}
+
+.header__logo {
+  width: 132px;
+  height: 72px;
+  margin: 12px auto 6px;
+}
+
+.header__menues {
+  float: right;
+  display: flex;
+  justify-content: end;
+  padding-right: 4px;
+  align-items: center;
+}
+
+.header__menuItem {
+  margin-right: 29px;
+}
+
+.header__access {
+  background-image: url(../images/header/pin.svg);
+}
+
 /*
  * Pages
  * -------------------------------------------------------------------
