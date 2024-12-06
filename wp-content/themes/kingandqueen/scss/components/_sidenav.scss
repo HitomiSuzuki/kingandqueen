@@ -1,0 +1,35 @@
+.sidenav {
+    position: fixed;
+    z-index: 999;
+    display: block;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+
+    &__item {
+        font-size: 16px;
+        line-height: 140%;
+        color: white;
+        display: block;
+        letter-spacing: 5px;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        
+        &:hover {
+            color: white;
+            text-decoration: none;
+            opacity: 0.95;
+        }
+        &:active {
+            color: white;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
