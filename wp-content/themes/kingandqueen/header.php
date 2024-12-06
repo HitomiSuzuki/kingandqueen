@@ -22,7 +22,7 @@
 <body>
     <header class="header" id="header" ontouchscreen="">
         <div class="header__top">
-            <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/images/header/headerLogo.png" alt=""></a>
+            <a href="" class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/images/nav/headerLogo.png" alt=""></a>
             <div class="header__menues">
                 <a href="<?php echo home_url(); ?>/access" class="header__menuItem header__access">アクセス</a>
                 <a href="" class="header__menuItem header__button language">LANGUAGE</a>
@@ -33,43 +33,43 @@
         <ul class="header__nav">
             <li>
                 <a href="<?php echo home_url(); ?>/concept" class="header__navMenu header__navMenu--concept">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/concept.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/concept.svg" alt="">
                     コンセプト
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/bath" class="header__navMenu header__navMenu--bath">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/bath.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/bath.svg" alt="">
                     サウナ・お風呂
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/waterbath" class="header__navMenu header__navMenu--waterbath">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/waterbath.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/waterbath.svg" alt="">
                     水風呂
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/food" class="header__navMenu header__navMenu--food">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/food.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/food.svg" alt="">
                     フードコート
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/stoneSauna" class="header__navMenu header__navMenu--stonesauna">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/stonesauna.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/stonesauna.svg" alt="">
                     岩盤浴
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/relaxation" class="header__navMenu header__navMenu--relaxation">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/relaxation.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/relaxation.svg" alt="">
                     リラクゼーション
                 </a>
             </li>
             <li>
                 <a href="<?php echo home_url(); ?>/guide" class="header__navMenu header__navMenu--guide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/header/guide.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nav/guide.svg" alt="">
                     利用案内
                 </a>
             </li>
