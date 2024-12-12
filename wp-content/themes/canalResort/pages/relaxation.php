@@ -36,6 +36,7 @@ Template Post Type: page
                     <p>テキストが入ります</p>
                 </dd>
             </dl> -->
+            <a href="<?php echo get_template_directory_uri(); ?>/images/relaxation/laugh.pdf" class="relaxation__item__content__menu" target="_blank">メニューを見る</a>
             <a href="https://www.peakmanager.com/online/index/z7q6r4/eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTAxtDBVsq4FXDD01Qub" class="relaxation__item__content__menu">ネット予約はこちら</a>
             <p class="relaxation__item__content__phone">
                 <span>ご予約・お問い合わせ</span>
@@ -59,7 +60,7 @@ Template Post Type: page
                     <p>テキストが入ります</p>
                 </dd>
             </dl> -->
-            <a href="<?php echo get_template_directory_uri(); ?>/images/relaxation/spaRe.ra.ku.pdf" class="relaxation__item__content__menu">メニューを見る</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/images/relaxation/spaRe.ra.ku.pdf" class="relaxation__item__content__menu" target="_blank">メニューを見る</a>
             <a href="https://reraku.jp/studio/king-and-queen/booking" class="relaxation__item__content__menu">ネット予約はこちら</a>
         </div>
     </div>
@@ -79,7 +80,7 @@ Template Post Type: page
                     <p>テキストが入ります</p>
                 </dd>
             </dl> -->
-            <a href="<?php echo get_template_directory_uri(); ?>/images/relaxation/beautyPier.pdf" class="relaxation__item__content__menu">メニューを見る</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/images/relaxation/beautyPier.pdf" class="relaxation__item__content__menu" target="_blank">メニューを見る</a>
             <p class="relaxation__item__content__phone">
                 <span>ご予約・お問い合わせ</span>
                 042-941-6966
