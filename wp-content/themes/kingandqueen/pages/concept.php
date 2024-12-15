@@ -14,7 +14,6 @@ Template Post Type: page
     <div class="text-box">
         <h2>鏡よ鏡、この地の王は誰？女王は誰？</h2>
     </div>
-	
 </div>
 
 <?php get_footer(); ?>
