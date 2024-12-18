@@ -2,23 +2,6 @@
  * Base
  * -------------------------------------------------------------------
  */
-body {
-  line-height: 1.5em;
-  font-size: 15px;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-}
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
-body a:hover, body a:active {
-  text-decoration: none;
-}
-
 /*	Reset
 -------------------------------*/
 *,
@@ -163,6 +146,23 @@ label[for] {
 
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+body {
+  line-height: 1.5em;
+  font-size: 15px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+body a:hover, body a:active {
+  text-decoration: none;
 }
 
 /*
@@ -333,4 +333,100 @@ label[for] {
 /*
  * Pages
  * -------------------------------------------------------------------
- *//*# sourceMappingURL=main.css.map */
+ */
+.top {
+  background-image: url(../images/background.jpg);
+}
+
+.top__nav {
+  margin: 40px auto 0;
+  max-width: 1200px;
+}
+
+.top__nav__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__nav__item {
+  border-left: 1px solid #8E8E8E;
+}
+.top__nav__item:hover {
+  background-color: #D53633;
+  color: white;
+  border-left: 1px solid white;
+  z-index: 10;
+}
+.top__nav__item:hover + .top__nav__item {
+  border-left: 1px solid white;
+}
+.top__nav__item:first-of-type {
+  border-left: none;
+}
+.top__nav__item:first-of-type:hover {
+  border-left: none;
+}
+
+.top__nav__link {
+  padding: 55px 0 13px;
+  font-size: 20px;
+  color: #231815;
+  font-weight: 700;
+  line-height: 1.6;
+  width: 240px;
+  text-align: center;
+  display: block;
+  background-size: 46px 46px;
+  background-repeat: no-repeat;
+  background-position: top 9px center;
+}
+.top__nav__link.fee {
+  background-image: url(../images/top/info/fee.png);
+}
+.top__nav__link.fee:hover {
+  background-image: url(../images/top/info/fee_on.png);
+}
+.top__nav__link.openingHour {
+  background-image: url(../images/top/info/openingHour.png);
+}
+.top__nav__link.openingHour:hover {
+  background-image: url(../images/top/info/openingHour_on.png);
+}
+.top__nav__link.access {
+  background-image: url(../images/top/info/access.png);
+}
+.top__nav__link.access:hover {
+  background-image: url(../images/top/info/access_on.png);
+}
+.top__nav__link.bus {
+  background-image: url(../images/top/info/bus.png);
+}
+.top__nav__link.bus:hover {
+  background-image: url(../images/top/info/bus_on.png);
+}
+.top__nav__link.app {
+  background-image: url(../images/top/info/app.png);
+}
+.top__nav__link.app:hover {
+  background-image: url(../images/top/info/app_on.png);
+}
+
+.top__concept {
+  margin-top: 73px;
+}
+
+.top__concept__catch h1 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.4;
+  color: black;
+  filter: drop-shadow(0 6px 6px rgba(83, 54, 23, 0.25));
+}
+.top__concept__catch h1 span {
+  display: block;
+  font-size: 36px;
+}
+.top__concept__catch h1 .h1-large {
+  font-size: 60px;
+}/*# sourceMappingURL=main.css.map */

@@ -3,41 +3,36 @@
 <main class="top">
     <section class="top__mv">
         <video controls autoplay muted loop playsinline width="100%">
-            <source src="<?php echo get_template_directory_uri() ?>/images/top/K&Q_offline_type_B241025.mp4" type="video/mp4">
-            <source src="<?php echo get_template_directory_uri() ?>/images/top/K&Q_offline_type_B241025.oggtheora.ogv" type="video/ogv">
-            <source src="<?php echo get_template_directory_uri() ?>/images/top/K&Q_offline_type_B241025.webmhd.webm" type="video/webm">
+            <!-- <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.mp4" type="video/mp4">
+            <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.oggtheora.ogv" type="video/ogv">
+            <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.webmhd.webm" type="video/webm"> -->
         </video>
     </section>
 
     <section class="top__nav">
         <ul class="top__nav__inner">
             <li class="top__nav__item">
-                <a href="" class="top__nav__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/info/fee.png" alt="">
+                <a href="" class="top__nav__link fee">
                     <p>ご利用料金</p>
                 </a>
             </li>
             <li class="top__nav__item">
-                <a href="" class="top__nav__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/info/openingHour.png" alt="">
+                <a href="" class="top__nav__link openingHour">
                     <p>営業時間</p>
                 </a>
             </li>
             <li class="top__nav__item">
-                <a href="" class="top__nav__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/info/access.png" alt="">
+                <a href="" class="top__nav__link access">
                     <p>アクセス</p>
                 </a>
             </li>
             <li class="top__nav__item">
-                <a href="" class="top__nav__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/info/bus.png" alt="">
+                <a href="" class="top__nav__link bus">
                     <p>無料シャトルバス</p>
                 </a>
             </li>
             <li class="top__nav__item">
-                <a href="" class="top__nav__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/info/app.png" alt="">
+                <a href="" class="top__nav__link app">
                     <p>公式アプリ</p>
                 </a>
             </li>
@@ -48,7 +43,7 @@
         <div class="top__concept__catch">
             <img src="" alt="">
             <img src="" alt="">
-            <h1><span>楽しんだ者こそ、王であり、女王。</span>本能を解放せよ。<span>ここは、関東最大級のスパリゾート</span></h1>
+            <h1><span>楽しんだ者こそ、王であり、女王。</span><span class="h1-large">本能を解放せよ。</span><span>ここは、関東最大級のスパリゾート</span></h1>
         </div>
 
         <div class="top__concept__image">

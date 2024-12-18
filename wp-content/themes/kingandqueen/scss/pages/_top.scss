@@ -1,0 +1,112 @@
+.top {
+    background-image: $background;
+}
+
+//===================
+//ナビゲーション
+//===================
+
+.top__nav {
+    margin: 40px auto 0;
+    max-width: 1200px;
+}
+
+.top__nav__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top__nav__item {
+    border-left: 1px solid #8E8E8E;
+
+    &:hover {
+        background-color: #D53633;
+        color: white;
+        border-left: 1px solid white;
+        z-index: 10;
+
+        &+.top__nav__item {
+            border-left: 1px solid white;
+        }
+    }
+
+    &:first-of-type {
+        border-left: none;
+    
+        &:hover {
+            border-left: none;
+        }
+    }
+
+}
+
+.top__nav__link {
+    padding: 55px 0 13px;
+    font-size: 20px;
+    color: #231815;
+    font-weight: $bold;
+    line-height: 1.6;
+    width: 240px;
+    text-align: center;
+    display: block;
+    background-size: 46px 46px;
+    background-repeat: no-repeat;
+    background-position: top 9px center;
+    
+    &.fee {
+        background-image: url(../images/top/info/fee.png);
+        &:hover {
+            background-image: url(../images/top/info/fee_on.png);
+        }
+    }
+    &.openingHour {
+        background-image: url(../images/top/info/openingHour.png);
+        &:hover {
+            background-image: url(../images/top/info/openingHour_on.png);
+        }
+    }
+    &.access {
+        background-image: url(../images/top/info/access.png);
+        &:hover {
+            background-image: url(../images/top/info/access_on.png);
+        }
+    }
+    &.bus {
+        background-image: url(../images/top/info/bus.png);
+        &:hover {
+            background-image: url(../images/top/info/bus_on.png);
+        }
+    }
+    &.app {
+        background-image: url(../images/top/info/app.png);
+        &:hover {
+            background-image: url(../images/top/info/app_on.png);
+        }
+    }
+}
+
+//===================
+//コンセプト
+//===================
+.top__concept {
+    margin-top: 73px;
+}
+
+.top__concept__catch {
+    h1 {
+        text-align: center;
+        font-weight: $black;
+        line-height: 1.4;
+        color: black;
+        filter: drop-shadow(0 6px 6px rgba(#533617, 0.25));
+        span {
+            display: block;
+            font-size: 36px;
+        }
+
+        .h1-large {
+            font-size: 60px;
+        }
+    }
+}
