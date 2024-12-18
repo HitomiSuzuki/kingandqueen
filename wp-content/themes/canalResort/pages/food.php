@@ -88,6 +88,30 @@ Template Post Type: page
                         'imgPath' => '/images/food/kingQueenDining/ramensJapan.png',
                         'isComingSoon' => false
                     ),
+                    'yabuya' => array(
+                        'name' => 'yabuya',
+                        'term' => 'yabuya',
+                        'imgPath' => '/images/food/kingQueenDining/yabuya.png',
+                        'isComingSoon' => false
+                    ),
+                    'the-corner' => array(
+                        'name' => 'the-corner',
+                        'term' => 'the-corner',
+                        'imgPath' => '/images/food/kingQueenDining/theCorner.png',
+                        'isComingSoon' => false
+                    ),
+                    'teppan-rush' => array(
+                        'name' => 'teppan-rush',
+                        'term' => 'teppan-rush',
+                        'imgPath' => '/images/food/kingQueenDining/teppanRush.png',
+                        'isComingSoon' => false
+                    ),
+                    'nikudon-kotobuki' => array(
+                        'name' => 'nikudon-kotobuki',
+                        'term' => 'nikudon-kotobuki',
+                        'imgPath' => '/images/food/kingQueenDining/kotobuki.png',
+                        'isComingSoon' => false
+                    ),
                 );
 
                 foreach ($shopArray as $shop) {
