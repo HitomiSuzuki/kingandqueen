@@ -94,6 +94,25 @@
 }
 
 .top__concept__catch {
+    position: relative;
+
+    .male-lion {
+        width: 313px;
+        height: 313px;
+        display: block;
+        position: absolute;
+        top: -31px;
+        right: calc(50% + 293px);
+    }
+
+    .female-lion {
+        width: 270px;
+        height: 270px;
+        display: block;
+        position: absolute;
+        top: -31px;
+        left: calc(50% + 293px);
+    }
     h1 {
         text-align: center;
         font-weight: $black;
@@ -108,5 +127,126 @@
         .h1-large {
             font-size: 60px;
         }
+    }
+}
+
+.top__concept__image {
+    position: relative;
+    margin: 119px auto 0;
+    width: 1000px;
+
+    .img-layer {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .img-animal1 {
+        width: 243px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        left: -100px;
+        display: block;
+    }
+
+    .img-title {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        top: -15px;
+        left: calc(50vw - 50%);
+        display: block;
+    }
+
+    .img-splash {
+        width: 292px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 40px;
+        display: block;
+    }
+
+    .img-animal2 {
+        width: 198px;
+        height: auto;
+        position: absolute;
+        top: 77px;
+        right: -111px;
+        display: block;
+    }
+}
+
+.top__concept__movie {
+    margin: 84px auto 0;
+    width: 1000px;
+}
+
+.top__concept__link {
+    display: block;
+    margin: 39.5px auto 0;
+    border-radius: 30px;
+    background-color: #000;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: $medium;
+    line-height: 2;
+    width: 290px;
+    text-align: center;
+}
+
+
+//===================
+//　施設案内
+//===================
+.top__facilities {
+    margin-top: 171px;
+}
+
+.top__facilitiesItem {
+    &--bath {
+        background: linear-gradient(90deg, rgba(#DA2B2B, 100), rgba(#DA2B2B, 0)), url(../images/top/facilities/bath.png)
+    }
+
+    &--sauna {
+        background: linear-gradient(90deg, rgba(#DA2B2B, 100), rgba(#DA2B2B, 0)), url(../images/top/facilities/bath.png)
+    }
+
+    &--bedrock {
+        background: linear-gradient(90deg, rgba(#DA2B2B, 100), rgba(#DA2B2B, 0)), url(../images/top/facilities/bath.png)
+    }
+
+    &--food {
+        background: linear-gradient(90deg, rgba(#DA2B2B, 100), rgba(#DA2B2B, 0)), url(../images/top/facilities/bath.png)
+    }
+
+    &--relaxation {
+        background: linear-gradient(90deg, rgba(#DA2B2B, 100), rgba(#DA2B2B, 0)), url(../images/top/facilities/bath.png)
+    }
+}
+
+
+//===================
+// 共通パーツ
+//===================
+.top__sectionTitle {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
+    color: #C19962;
+    text-shadow: 0px 2px 1px #eee;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.4;
+
+    span {
+        display: block;
+        font-family: "Zen Kaku Gothic New", serif;
+        font-weight: $bold;
+        color: #231815;
+        box-shadow: none;
+        font-size: 14px;
     }
 }

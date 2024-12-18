@@ -3,9 +3,9 @@
 <main class="top">
     <section class="top__mv">
         <video controls autoplay muted loop playsinline width="100%">
-            <!-- <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.mp4" type="video/mp4">
-            <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.oggtheora.ogv" type="video/ogv">
-            <source src="<?php echo get_template_directory_uri() ?>/images/top/mv/K&Q_offline_type_B241025.webmhd.webm" type="video/webm"> -->
+            <!-- <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/K&Q_offline_type_B241025.mp4" type="video/mp4">
+            <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/K&Q_offline_type_B241025.oggtheora.ogv" type="video/ogv">
+            <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/K&Q_offline_type_B241025.webmhd.webm" type="video/webm"> -->
         </video>
     </section>
 
@@ -41,27 +41,24 @@
 
     <section class="top__concept">
         <div class="top__concept__catch">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="male-lion" src="<?php echo get_template_directory_uri(); ?>/images/top/animals/maleLion.png" alt="">
             <h1><span>楽しんだ者こそ、王であり、女王。</span><span class="h1-large">本能を解放せよ。</span><span>ここは、関東最大級のスパリゾート</span></h1>
+            <img class="female-lion" src="<?php echo get_template_directory_uri(); ?>/images/top/animals/femaleLion.png" alt="">
         </div>
 
         <div class="top__concept__image">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="img-layer" src="<?php echo get_template_directory_uri(); ?>/images/top/concept/layer.png" alt="">
+            <img class="img-animal1" src="<?php echo get_template_directory_uri(); ?>/images/top/animals/bearandcheater.png" alt="">
+            <img class="img-title" src="<?php echo get_template_directory_uri(); ?>/images/top/concept/title.png" alt="">
+            <img class="img-splash" src="<?php echo get_template_directory_uri(); ?>/images/top/concept/splash.png" alt="">
+            <img class="img-animal2" src="<?php echo get_template_directory_uri(); ?>/images/top/animals/bearandracoon.png" alt="">
         </div>
 
         <div class="top__concept__movie">
             <video controls autoplay muted loop playsinline width="100%">
-                <source src="<?php echo get_template_directory_uri() ?>/images/top/top-cm.mp4" type="video/mp4">
-                <source src="<?php echo get_template_directory_uri() ?>/images/top/top-cm.oggtheora.ogv" type="video/ogv">
-                <source src="<?php echo get_template_directory_uri() ?>/images/top/top-cm.webmhd.webm" type="video/webm">
+                <!-- <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/top-cm.mp4" type="video/mp4">
+                <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/top-cm.oggtheora.ogv" type="video/ogv">
+                <source src="<?php echo get_template_directory_uri() ?>/images/top/movie/top-cm.webmhd.webm" type="video/webm"> -->
             </video>
 
             <a href="" class="top__concept__link">コンセプトについて詳しく見る</a>
@@ -71,36 +68,36 @@
     <section class="top__facilities">
         <h2 class="top__sectionTitle">FACILITIES<span>施設一覧</span></h2>
         <ul class="top__facilitiesList">
-            <li class="top__facilitiesItem">
-                <img src="" alt="">
+            <li class="top__facilitiesItem top__facilitiesItem--bath">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/zebra.png" alt="">
                 <h3 class="top__facilitiesItem__title">
                     NATURAL HOT SPRINGS & BATH
                     <span>天然温泉と各種お風呂</span>
                 </h3>
             </li>
-            <li class="top__facilitiesItem">
-                <img src="" alt="">
+            <li class="top__facilitiesItem top__facilitiesItem--sauna">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephant.png" alt="">
                 <h3 class="top__facilitiesItem__title">
                     NATURAL HOT SPRINGS & BATH
                     <span>天然温泉と各種お風呂</span>
                 </h3>
             </li>
-            <li class="top__facilitiesItem">
-                <img src="" alt="">
+            <li class="top__facilitiesItem top__facilitiesItem--bedrock">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/gollira.png" alt="">
                 <h3 class="top__facilitiesItem__title">
                     NATURAL HOT SPRINGS & BATH
                     <span>天然温泉と各種お風呂</span>
                 </h3>
             </li>
-            <li class="top__facilitiesItem">
-                <img src="" alt="">
+            <li class="top__facilitiesItem top__facilitiesItem--food">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephant.png" alt="">
                 <h3 class="top__facilitiesItem__title">
                     NATURAL HOT SPRINGS & BATH
                     <span>天然温泉と各種お風呂</span>
                 </h3>
             </li>
-            <li class="top__facilitiesItem">
-                <img src="" alt="">
+            <li class="top__facilitiesItem top__facilitiesItem--relaxation">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/bear.png" alt="">
                 <h3 class="top__facilitiesItem__title">
                     NATURAL HOT SPRINGS & BATH
                     <span>天然温泉と各種お風呂</span>
