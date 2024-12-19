@@ -69,41 +69,71 @@
         <h2 class="top__sectionTitle">FACILITIES<span>施設一覧</span></h2>
         <ul class="top__facilitiesList">
             <li class="top__facilitiesItem top__facilitiesItem--bath">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/zebra.png" alt="">
-                <h3 class="top__facilitiesItem__title">
-                    NATURAL HOT SPRINGS & BATH
-                    <span>天然温泉と各種お風呂</span>
-                </h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/zebra.png" alt="">
+                    <h3 class="top__facilitiesItem__title">
+                        NATURAL HOT SPRINGS & BATH
+                        <span>天然温泉と各種お風呂</span>
+                    </h3>
+                    <a href="">詳細を見る</a>
+                </div>
             </li>
             <li class="top__facilitiesItem top__facilitiesItem--sauna">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephant.png" alt="">
-                <h3 class="top__facilitiesItem__title">
-                    NATURAL HOT SPRINGS & BATH
-                    <span>天然温泉と各種お風呂</span>
-                </h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephant.png" alt="">
+                    <h3 class="top__facilitiesItem__title">
+                        NATURAL HOT SPRINGS & BATH
+                        <span>天然温泉と各種お風呂</span>
+                    </h3>
+                    <a href="">詳細を見る</a>
+                </div>
             </li>
             <li class="top__facilitiesItem top__facilitiesItem--bedrock">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/gollira.png" alt="">
-                <h3 class="top__facilitiesItem__title">
-                    NATURAL HOT SPRINGS & BATH
-                    <span>天然温泉と各種お風呂</span>
-                </h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/gollira.png" alt="">
+                    <h3 class="top__facilitiesItem__title">
+                        NATURAL HOT SPRINGS & BATH
+                        <span>天然温泉と各種お風呂</span>
+                    </h3>
+                    <a href="">詳細を見る</a>
+                </div>
             </li>
             <li class="top__facilitiesItem top__facilitiesItem--food">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephant.png" alt="">
-                <h3 class="top__facilitiesItem__title">
-                    NATURAL HOT SPRINGS & BATH
-                    <span>天然温泉と各種お風呂</span>
-                </h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/elephanttigersheep.png" alt="">
+                    <h3 class="top__facilitiesItem__title">
+                        NATURAL HOT SPRINGS & BATH
+                        <span>天然温泉と各種お風呂</span>
+                    </h3>
+                    <a href="">詳細を見る</a>
+                </div>
             </li>
             <li class="top__facilitiesItem top__facilitiesItem--relaxation">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/bear.png" alt="">
-                <h3 class="top__facilitiesItem__title">
-                    NATURAL HOT SPRINGS & BATH
-                    <span>天然温泉と各種お風呂</span>
-                </h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/animals/bearandracoon2.png" alt="">
+                    <h3 class="top__facilitiesItem__title">
+                        NATURAL HOT SPRINGS & BATH
+                        <span>天然温泉と各種お風呂</span>
+                    </h3>
+                    <a href="">詳細を見る</a>
+                </div>
             </li>
         </ul>
+    </section>
+
+    <section class="top__news">
+        <h2 class="top__sectionTitle">FACILITIES<span>施設一覧</span></h2>
+        <!-- swiper -->
+        <div class="top__news__container"></div>
+    </section>
+
+    <section class="top__map">
+        <h2 class="top__sectionTitle">AREA MAP<span>館内マップ</span></h2>
+        <div class="top__map__container">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/map.png" alt="">
+        </div>
+
+        <a href="" class="top__map__link">詳細マップはこちら</a>
     </section>
 </main>
 
