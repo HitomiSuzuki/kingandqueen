@@ -1026,4 +1026,44 @@ body a:hover, body a:active {
 }
 .recruit__place span {
   font-weight: 700;
+}
+
+.company {
+  background-image: url(../images/background.jpg);
+  padding-bottom: 160px;
+}
+
+.company__content {
+  padding: 100px 120px;
+  max-width: 1200px;
+  margin: 51px auto 0;
+  background-color: white;
+}
+.company__content dl {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #58595B;
+  line-height: 1.4;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.company__content dt {
+  width: 30%;
+  border-top: 1px solid #D53633;
+  padding: 28px 12px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+.company__content dt:last-of-type {
+  border-bottom: 1px solid #D53633;
+}
+.company__content dd {
+  width: 70%;
+  border-top: 1px solid #ccc;
+  padding: 28px 0;
+  font-weight: 400;
+}
+.company__content dd:last-of-type {
+  border-bottom: 1px solid #CCC;
 }/*# sourceMappingURL=main.css.map */

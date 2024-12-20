@@ -1,0 +1,45 @@
+.company {
+    background-image: $background;
+    padding-bottom: 160px;
+}
+
+.company__content {
+    padding: 100px 120px;
+    max-width: 1200px;
+    margin: 51px auto 0;
+    background-color: white;
+
+    dl {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: #58595B;
+        line-height: 1.4;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    dt {
+        width: 30%;
+        border-top: 1px solid #D53633;
+        padding: 28px 12px;
+        box-sizing: border-box;
+        font-weight: $bold;
+
+        &:last-of-type {
+            border-bottom: 1px solid #D53633;
+        }
+    }
+
+    dd {
+        width: 70%;
+        border-top: 1px solid #ccc;
+        padding: 28px 0;
+        font-weight: $regular;
+
+        &:last-of-type {
+            border-bottom: 1px solid #CCC;
+        }
+    }
+}
+
