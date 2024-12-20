@@ -1,0 +1,43 @@
+.recruit {
+    background-image: $background;
+    padding-bottom: 214px;
+}
+
+.recruit__content {
+    margin: 53px auto 0;
+    max-width: 1200px;
+    padding: 38px 0 50px;
+    filter: drop-shadow(0 0 25px rgba(0,0,0,.1));
+    background-color: white;
+
+    a {
+        font-family: 'Oswald', serif;
+        font-size: 60px;
+        line-height: 45px;
+        font-weight: $regular;
+        color: black;
+        margin-top: 40px;
+        text-align: center;
+        display: block;
+    }
+}
+
+.recruit__catch {
+    font-size: 30px;
+    font-weight: $medium;
+    line-height: 1.6;
+    color: black;
+    text-align: center;
+}
+
+.recruit__place {
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: $regular;
+    margin-top: 41px;
+
+    span {
+        font-weight: $bold;
+    }
+}
