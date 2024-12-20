@@ -647,4 +647,142 @@ body a:hover, body a:active {
   color: #231815;
   box-shadow: none;
   font-size: 14px;
+}
+
+.relaxation {
+  background-image: url(../images/background.jpg);
+}
+
+.relaxation__main {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.relaxation__links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.relaxation__link {
+  width: 31%;
+  max-width: 380px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #D53633;
+  background-color: white;
+}
+.relaxation__link div {
+  width: 100%;
+  text-align: center;
+}
+.relaxation__link p {
+  font-size: 16px;
+  font-weight: 900;
+  color: #231815;
+  line-height: 1.6;
+  text-align: center;
+}
+.relaxation__link p span {
+  font-weight: 400;
+  color: black;
+}
+.relaxation__link .relaxation__link__logo--spareraku {
+  width: 167px;
+  height: 46px;
+}
+.relaxation__link .relaxation__link__logo--spareraku + p {
+  top: -11px;
+  position: relative;
+}
+.relaxation__link .relaxation__link__logo--beautypier {
+  width: 191px;
+  height: 34px;
+}
+
+.relaxation__shops {
+  padding-bottom: 130px;
+}
+
+.relaxation__shop {
+  background-color: white;
+  filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.1));
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  padding-right: 94px;
+  margin-top: 80px;
+}
+.relaxation__shop:first-of-type {
+  margin-top: 66px;
+}
+
+.relaxation__shop__img {
+  width: 48%;
+  aspect-ratio: 512/370;
+}
+.relaxation__shop__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relaxation__shop__text {
+  width: 37.5%;
+}
+
+.relaxation__shop__name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: black;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.relaxation__shop__desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: black;
+  margin-top: 22px;
+}
+
+.relaxation__shop__link {
+  color: white;
+  width: 400px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}
+.relaxation__shop__link--web {
+  background-color: black;
+}
+.relaxation__shop__link--menu {
+  background-color: #ccc;
+}
+.relaxation__shop__link--phone {
+  margin-top: 3px;
+  padding: 0;
+  font-size: 30px;
+  font-family: "Oswald", serif;
+  line-height: 45px;
+  font-weight: 400;
+  border: 1px solid black;
+  color: black;
+}
+
+.relaxation__shop__phone__note {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
