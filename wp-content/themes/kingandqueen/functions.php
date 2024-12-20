@@ -76,23 +76,6 @@ function create_post_type()
         )
     );
 
-    register_post_type(
-        'recruit', //カスタム投稿タイプ名
-        array( //オプション
-            'hierarchical',
-            'label' => '求人情報',
-            'public' => true,
-            'has_archive' => true,
-            'menu_position' => 5,
-            'show_in_rest' => true,
-            'supports' => array(
-                // サポートする機能を記述
-                'editor',
-                'title'
-            ),
-        )
-    );
-
     flush_rewrite_rules(false);
 }
 
