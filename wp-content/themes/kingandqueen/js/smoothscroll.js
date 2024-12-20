@@ -23,24 +23,3 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
     });
 
 }
-
-
-
-// jQuery(window.onload = function() {
-//     jQuery("svg a").click(function() {
-//     //スクロールのスピード
-//     var speed = 500;
-//     //リンク元を取得
-//     var href = jQuery(this).attr("xlink:href");
-//     //リンク先を取得
-//     var target = jQuery(href == "#" || href == "" ? 'html' : href);
-//     //リンク先までの距離を取得
-//     var position = target.offset().top;
-//     //スムーススクロール
-//     jQuery("html, body").animate({
-//     scrollTop: position
-//     }, speed, "swing");
-//     return false;
-    
-//     });
-//     });
