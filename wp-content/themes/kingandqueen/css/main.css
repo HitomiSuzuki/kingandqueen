@@ -785,4 +785,164 @@ body a:hover, body a:active {
   font-weight: 400;
   text-align: center;
   margin-top: 20px;
+}
+
+.food {
+  background-image: url(../images/background.jpg);
+}
+
+.food__title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 2;
+  color: black;
+  position: relative;
+  text-align: center;
+  padding-top: 35px;
+}
+.food__title:before {
+  content: "";
+  width: 120px;
+  height: 6px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E60012;
+}
+
+.food__image {
+  margin-top: 35px;
+  width: 100%;
+  height: 400px;
+}
+.food__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food__desc {
+  margin-top: 37px;
+  text-align: center;
+}
+.food__desc span {
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2;
+  position: relative;
+}
+.food__desc span:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-bottom: 2px dashed #D53633;
+  width: 100%;
+}
+
+.food__area__title {
+  padding: 30px 0;
+  text-align: center;
+}
+.food__area__title--kingandqueendining {
+  margin-top: 63px;
+  background-image: url(../images/food/kingqueendining-bg.png);
+}
+.food__area__title--chefscollabo {
+  margin-top: 103px;
+  background-image: url(../images/food/chefscollabo-bg.png);
+}
+.food__area__title--sansuisomoku {
+  margin-top: 70px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.food__area__title--juicycafe {
+  background-image: url(../images/food/juicycafe-bg.png);
+}
+.food__area__title p {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  line-height: 2;
+  filter: drop-shadow(0 6px 6px rgba(83, 54, 23, 0.25));
+}
+.food__area__title h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2;
+  color: black;
+  filter: drop-shadow(0 6px 6px rgba(83, 54, 23, 0.25));
+}
+.food__area__title h2 span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.food__area__title a {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 2;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 8px;
+  width: 255px;
+  margin: 16px auto 0;
+  display: block;
+}
+
+.food__area__shops {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1120px;
+}
+
+.food__area__shops__item {
+  width: 23%;
+  max-width: 260px;
+  padding: 0 1%;
+  margin-top: 76px;
+}
+.food__area__shops__item div {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.food__area__shops__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.food__area__shops__item img.menu-corner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+.food__area__shops__item p {
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.menu__content {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  padding: 0 20px;
 }/*# sourceMappingURL=main.css.map */
