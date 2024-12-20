@@ -369,6 +369,26 @@ body a:hover, body a:active {
   transform: translate(-50%, 0);
 }
 
+.page__title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 2;
+  color: black;
+  position: relative;
+  text-align: center;
+  padding-top: 35px;
+}
+.page__title:before {
+  content: "";
+  width: 120px;
+  height: 6px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E60012;
+}
+
 /*
  * Pages
  * -------------------------------------------------------------------
@@ -828,26 +848,6 @@ body a:hover, body a:active {
 
 .food {
   background-image: url(../images/background.jpg);
-}
-
-.food__title {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 2;
-  color: black;
-  position: relative;
-  text-align: center;
-  padding-top: 35px;
-}
-.food__title:before {
-  content: "";
-  width: 120px;
-  height: 6px;
-  position: absolute;
-  bottom: -11px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #E60012;
 }
 
 .food__image {

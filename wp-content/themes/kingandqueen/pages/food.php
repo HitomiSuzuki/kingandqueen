@@ -13,7 +13,7 @@ Template Post Type: page
             <h2><?php the_title(); ?></h2>
         </div>
     </div>
-    <h1 class="food__title">お食事ゾーン</h1>
+    <h1 class="page__title">お食事ゾーン</h1>
 
     <div class="food__image">
         <img src="<?php echo get_template_directory_uri(); ?>/images/food/food-visual.png" alt="">
