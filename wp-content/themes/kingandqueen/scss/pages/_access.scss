@@ -1,0 +1,27 @@
+.access {
+    background-image: $background;
+    padding-bottom: 160px;
+}
+
+.access__map {
+    margin-top: 20px;
+
+    ul {
+        max-width: 976px;
+        margin: 0 auto;
+    }
+
+    li {
+        padding-top: 32px;
+    }
+}
+
+.access__bus {
+    max-width: 1200px;
+    margin: 61px auto 0;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
