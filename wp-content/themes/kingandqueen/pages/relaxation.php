@@ -8,7 +8,11 @@ Template Post Type: page
 <?php get_header(); ?>
 
 <main class="relaxation">
-    <section class="mv"></section>
+    <div class="page-header">
+        <div class="title-box">
+            <h2><?php the_title(); ?></h2>
+        </div>
+    </div>
     <section class="relaxation__main">
         <div class="relaxation__links">
             <a href="#relaxation_1" class="relaxation__link">

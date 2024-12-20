@@ -8,6 +8,11 @@ Template Post Type: page
 <?php get_header(); ?>
 
 <main class="food">
+    <div class="page-header">
+        <div class="title-box">
+            <h2><?php the_title(); ?></h2>
+        </div>
+    </div>
     <h1 class="food__title">お食事ゾーン</h1>
 
     <div class="food__image">
