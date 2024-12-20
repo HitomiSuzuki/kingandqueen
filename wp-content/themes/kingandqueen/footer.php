@@ -57,5 +57,7 @@
 
 <!-- アプリダウンロードリンクのURL変更 -->
 <script src="<?php echo get_template_directory_uri() ?>/js/appDownload.js"></script>
+<!-- スムーススクロール -->
+<script src="<?php echo get_template_directory_uri() ?>/js/smoothscroll.js"></script>
 
 </html>
