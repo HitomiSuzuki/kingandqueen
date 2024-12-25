@@ -1,0 +1,104 @@
+.sauna_bath-content {
+    width: 80%;
+    max-width: 1250px;
+    margin: 50px auto;
+}
+.bath-header {
+    display: flex;
+    justify-content: center;
+}
+.bath-header > div {
+    border: 1px solid #D53633;
+    background: #fff;
+    height: 50px;
+    width: 275px;
+    margin: 0 50px;
+    transition: all .5s;
+}
+.bath-header > div:hover {
+    background: #D53633;
+}
+.bath-header > div:hover h2 {
+    color: #fff;
+}
+.bath-header a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bath-header h2 {
+    font-weight: 700;
+}
+.wave-bar img {
+    width: 100%;
+}
+.wave-bar {
+    margin: 50px 0;
+}
+.wave-bar img {
+    width: 100%;
+}
+.main-content h2,.bath-card h3 {
+    font-weight: 800;
+    font-size: 32px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+
+    &::before {
+        content: "";
+        border-bottom: 5px solid #E60012;
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: -20px;
+    }
+}
+.catalog {
+    margin-top: 75px;
+}
+.catalog-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 45%;
+    margin: 0 15px 75px;
+}
+.card img {
+    width: 100%;
+}
+.card h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #D53633;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1;
+}
+.card span {
+    font-size: .65em;
+}
+.card p {
+	margin-top: 15px;
+    font-weight: 600;
+    font-size: .95em;
+    line-height: 1.85;
+}
+
+.sauna-logo {
+    width: fit-content;
+    margin: auto;
+}
+.sauna-logo img {
+    width: 100%;
+}
+.sauna .card {
+    width: 100%;
+}
+.flex-box {
+    display: flex;
+}

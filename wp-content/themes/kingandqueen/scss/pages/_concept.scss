@@ -1,0 +1,48 @@
+.background-image {
+    background-image: url(/wp-content/themes/kingandqueen/images/concept/concept-story-top.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-bottom: 125px;
+    position: relative;
+    width: 100%;
+}
+.leon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.leon.icon1 {
+    left: calc(50% - 450px);
+}
+.leon.icon2 {
+    right: calc(50% - 650px);
+    left: inherit;
+}
+.text-box {
+	width: 100%;
+    margin: 75px auto;
+    padding-bottom: 75px;
+}
+.text-block {
+	width: 80%;
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+}
+.text-block h2, .text-block h3, .text-block h4, .text-block p {
+    font-weight: 800;
+    text-shadow: 0px 7px 7px #53361750;
+}
+.text-block h2 {
+    font-size: 32px;
+    line-height: 1.8;
+}
+.image-box {
+    margin: 30px 0 100px;
+}
+.image-box img {
+    width: 100%;
+}
