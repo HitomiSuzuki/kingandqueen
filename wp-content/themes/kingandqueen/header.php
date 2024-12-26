@@ -28,7 +28,8 @@
             <a href="<?php echo home_url(); ?>" class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/images/nav/headerLogo.png" alt=""></a>
             <div class="header__menues">
                 <a href="<?php echo home_url(); ?>/access" class="header__menuItem header__access">アクセス</a>
-                <a href="" class="header__menuItem header__button language">LANGUAGE</a>
+                <!-- <a href="" class="header__menuItem header__button language">LANGUAGE</a> -->
+                <?php echo do_shortcode('[gtranslate]') ?>
                 <a href="<?php echo home_url(); ?>/contact" class="header__menuItem header__button contact">お問い合わせ</a>
                 <a href="<?php echo home_url(); ?>/company" class="header__menuItem header__about">会社概要</a>
             </div>

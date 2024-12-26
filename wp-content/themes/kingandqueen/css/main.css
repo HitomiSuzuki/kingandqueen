@@ -251,6 +251,18 @@ body a:hover, body a:active {
   margin-right: 7px;
 }
 
+.gt_float_switcher {
+  border: 1px solid black;
+  transform: translateY(5px);
+  margin-right: 30px;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+}
+
+.gt_options {
+  max-width: none !important;
+}
+
 .footer__image {
   aspect-ratio: 1920/640;
 }
