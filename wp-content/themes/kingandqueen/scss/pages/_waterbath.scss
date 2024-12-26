@@ -1,0 +1,73 @@
+.waterbath {
+    background-image: $background;
+    padding: 0 0 126px;
+}
+
+.waterbath__mainlogo {
+    width: 474px;
+    height: 277px;
+    margin: 30px auto 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.waterbath__item {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    text-align: center;
+
+    &:nth-of-type(2) {
+        margin-top: 82px;
+    }
+
+    &:nth-of-type(3) {
+        margin-top: 70px;
+    }
+}
+
+
+.waterbath__title {
+    font-size: 18px;
+    font-weight: $bold;
+    line-height: 2;
+    filter: drop-shadow(0 6px 6px rgba(#533612, 0.25))
+}
+
+.waterbath__img {
+    margin-top: 30px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.waterbath__icon {
+    margin-top: 30px;
+}
+
+.waterbath__desc {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: $bold;
+    line-height: 2;
+    filter: drop-shadow(0 6px 6px rgba(#533612, 0.25))
+}
+
+.waterbath__separator {
+    max-width: 1600px;
+    height: 52px;
+    width: 100%;
+    margin: 55px auto 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
