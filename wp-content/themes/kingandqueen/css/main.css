@@ -440,34 +440,34 @@ body a:hover, body a:active {
   background-repeat: no-repeat;
   background-position: top 9px center;
 }
-.top__nav__link.fee {
+.top__nav__link--fee {
   background-image: url(../images/top/info/fee.png);
 }
-.top__nav__link.fee:hover {
+.top__nav__link--fee:hover {
   background-image: url(../images/top/info/fee_on.png);
 }
-.top__nav__link.openingHour {
+.top__nav__link--openingHour {
   background-image: url(../images/top/info/openingHour.png);
 }
-.top__nav__link.openingHour:hover {
+.top__nav__link--openingHour:hover {
   background-image: url(../images/top/info/openingHour_on.png);
 }
-.top__nav__link.access {
+.top__nav__link--access {
   background-image: url(../images/top/info/access.png);
 }
-.top__nav__link.access:hover {
+.top__nav__link--access:hover {
   background-image: url(../images/top/info/access_on.png);
 }
-.top__nav__link.bus {
+.top__nav__link--bus {
   background-image: url(../images/top/info/bus.png);
 }
-.top__nav__link.bus:hover {
+.top__nav__link--bus:hover {
   background-image: url(../images/top/info/bus_on.png);
 }
-.top__nav__link.app {
+.top__nav__link--app {
   background-image: url(../images/top/info/app.png);
 }
-.top__nav__link.app:hover {
+.top__nav__link--app:hover {
   background-image: url(../images/top/info/app_on.png);
 }
 
@@ -661,6 +661,87 @@ body a:hover, body a:active {
 .top__news {
   background-color: white;
   padding: 100px 0 109px;
+}
+
+.top__news__container {
+  max-width: 1200px;
+  margin: 75px auto 0;
+}
+.top__news__container .swiper-slide {
+  max-width: 23.33% !important;
+}
+
+.top__news__carousel__item__img {
+  aspect-ratio: 1/1;
+}
+.top__news__carousel__item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top__news__carousel__item__cat {
+  background-color: #C19962;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1px 15px;
+  display: inline-block;
+}
+
+.top__news__carousel__item__title__date {
+  color: #DA2B2B;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.top__news__carousel__item__title__title p {
+  color: #231815;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.top__news__carousel__navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 61px;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination {
+  position: static !important;
+  height: auto !important;
+  width: auto !important;
+  margin-top: 0 !important;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/top/prev.png);
+  background-size: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 22px;
+}
+
+.swiper-button-next::after {
+  content: "" !important;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/top/next.png);
+  background-size: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 22px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #E60012 !important;
 }
 
 .top__map {
@@ -1333,4 +1414,186 @@ body a:hover, body a:active {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.sauna_bath-content {
+  width: 80%;
+  max-width: 1250px;
+  margin: 50px auto;
+}
+
+.bath-header {
+  display: flex;
+  justify-content: center;
+}
+
+.bath-header > div {
+  border: 1px solid #D53633;
+  background: #fff;
+  height: 50px;
+  width: 275px;
+  margin: 0 50px;
+  transition: all 0.5s;
+}
+
+.bath-header > div:hover {
+  background: #D53633;
+}
+
+.bath-header > div:hover h2 {
+  color: #fff;
+}
+
+.bath-header a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bath-header h2 {
+  font-weight: 700;
+}
+
+.wave-bar img {
+  width: 100%;
+}
+
+.wave-bar {
+  margin: 50px 0;
+}
+
+.wave-bar img {
+  width: 100%;
+}
+
+.main-content h2, .bath-card h3 {
+  font-weight: 800;
+  font-size: 32px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.main-content h2::before, .bath-card h3::before {
+  content: "";
+  border-bottom: 5px solid #E60012;
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -20px;
+}
+
+.catalog {
+  margin-top: 75px;
+}
+
+.catalog-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 45%;
+  margin: 0 15px 75px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #D53633;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1;
+}
+
+.card span {
+  font-size: 0.65em;
+}
+
+.card p {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 0.95em;
+  line-height: 1.85;
+}
+
+.sauna-logo {
+  width: fit-content;
+  margin: auto;
+}
+
+.sauna-logo img {
+  width: 100%;
+}
+
+.sauna .card {
+  width: 100%;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.background-image {
+  background-image: url(/wp-content/themes/kingandqueen/images/concept/concept-story-top.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin-bottom: 125px;
+  position: relative;
+  width: 100%;
+}
+
+.leon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leon.icon1 {
+  left: calc(50% - 450px);
+}
+
+.leon.icon2 {
+  right: calc(50% - 650px);
+  left: inherit;
+}
+
+.text-box {
+  width: 100%;
+  margin: 75px auto;
+  padding-bottom: 75px;
+}
+
+.text-block {
+  width: 80%;
+  max-width: 1250px;
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+}
+
+.text-block h2, .text-block h3, .text-block h4, .text-block p {
+  font-weight: 800;
+  text-shadow: 0px 7px 7px rgba(83, 54, 23, 0.3137254902);
+}
+
+.text-block h2 {
+  font-size: 32px;
+  line-height: 1.8;
+}
+
+.image-box {
+  margin: 30px 0 100px;
+}
+
+.image-box img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

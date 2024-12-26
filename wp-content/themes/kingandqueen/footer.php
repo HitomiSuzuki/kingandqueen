@@ -59,5 +59,9 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/appDownload.js"></script>
 <!-- スムーススクロール -->
 <script src="<?php echo get_template_directory_uri() ?>/js/smoothscroll.js"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- トップのスライダー -->
+<script src="<?php echo get_template_directory_uri() ?>/js/swiper.js"></script>
 
 </html>

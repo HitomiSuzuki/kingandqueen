@@ -33,7 +33,7 @@ function create_post_type()
         'news', //カスタム投稿タイプ名
         array( //オプション
             'hierarchical',
-            'label' => 'イベント',
+            'label' => 'お知らせ',
             'public' => true,
             'has_archive' => true,
             'menu_position' => 5,
@@ -68,6 +68,17 @@ function create_post_type()
     register_taxonomy(
         'foodmenu-cat',
         'foodmenu',
+        array(
+            'label' => 'カテゴリー',
+            'hierarchical' => true,
+            'public' => true,
+            'show_in_rest' => true,
+        )
+    );
+
+    register_taxonomy(
+        'news-cat',
+        'news',
         array(
             'label' => 'カテゴリー',
             'hierarchical' => true,
